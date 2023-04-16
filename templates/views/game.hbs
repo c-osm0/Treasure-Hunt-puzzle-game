@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    {{>gameheader}}
+</head>
+
+<body>
+    <style>
+        body {
+
+            background-color: rgb(104, 86, 86);
+            margin-left: 5px;
+
+        }
+
+        .interact {
+            background-color: rgb(188, 228, 238);
+            border-radius: 8px;
+            color: rgb(151, 140, 15);
+            /* max-width: 30%; */
+            width: 40%;
+            height: 80px;
+            margin-top: 15px;
+            margin-left: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 5px;
+            padding-top: -0px;
+            font-family: fantasy;
+            border: 3px solid black;
+        }
+
+        .out {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .down {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .objects {
+            /* background-color: aquamarine; */
+            color: rgb(0, 0, 0);
+            border-radius: 8px;
+            border: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+
+        #volbtn {
+            height: 50px;
+            width: 100px;
+            border-radius: 100px;
+            position: relative;
+            top: 40px;
+            left: 200px;
+            overflow: hidden;
+            /* background-color: blue; */
+        }
+
+        #pass {
+            height: 50px;
+            width: 300px;
+            border-radius: 100px;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            overflow: hidden;
+        }
+
+        #pass:hover {
+            opacity: 0.7;
+            height: 48px;
+            width: 297px;
+            left: 51%;
+        }
+    </style>
+    <div class="out">
+        <canvas>
+        </canvas>
+        <div class="down">
+            <div class="interact">
+                <p id="dis">Welcome to Treasure Hunt Game!!! You need to find the password of treasure to win this game. Dont forget to look for clues while earching the password. Press W,A,S and D to move while I to interact with objects. Happy gaming!!!</p>
+            </div>
+            <button id="pass" onclick="win()">Enter Password</button>
+            <button id="volbtn" onclick=toggle()>Play/Pause audio</button>
+            <div class="objects">
+                <p>Time Elapsed-
+                <p id="timer">0</p>
+                </p>
+                <p id="user"></p>
+            </div>
+        </div>
+
+        {{!--
+        <script src="/js/check.js"></script> --}}
+        {{!--
+        <script src="check.js"></script> --}} --}}
+        <script src="/data/bluehouse.js"></script>
+        <script src="/data/board1.js"></script>
+        <script src="/data/file.js"></script>
+        <script src="/data/greensqr.js"></script>
+        <script src="/data/greentri.js"></script>
+        <script src="/data/middleboard.js"></script>
+        <script src="/data/person1.js"></script>
+        <script src="/data/person2.js"></script>
+        <script src="/data/portboard.js"></script>
+        <script src="/data/redhouse.js"></script>
+        <script src="/data/treasboard.js"></script>
+        <script src="/data/treasure.js"></script>
+        <script src="/js/classes.js"></script>
+        <script src="/js/game.js"></script>
+
+        
+
+</body>
+
+</html>
+
+
