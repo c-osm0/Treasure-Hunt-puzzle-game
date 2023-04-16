@@ -74,7 +74,7 @@ export const getAdmin = async (req, res, next) => {
             res.cookie("access_token", token, {
                 expires: new Date(Date.now() + 600000),
                 httpOnly: true,
-            }).render("admin")
+            }).render("admin.hbs")
         }
         else {
             if (err) return next(createError(403, "Not authorized"));

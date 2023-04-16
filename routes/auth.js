@@ -11,7 +11,7 @@ router.post("/register",register)
 router.post("/login",login)
 
 router.get("/game",verifyToken,(req,res)=>{
-    res.render("game")
+    res.render("game.hbs")
 })
 
 export default router;

@@ -25,7 +25,7 @@ export const register = async (req, res, next) => {
             res.cookie("access_token", token, {
                 expires: new Date(Date.now() + 600000),
                 httpOnly: true,
-            }).status(200).render("index");
+            }).status(200).render("index.hbs");
             // res.status(200).render("index")
         }
     } catch (err) {
@@ -49,7 +49,7 @@ export const login = async (req, res, next) => {
         res.cookie("access_token", token, {
             expires: new Date(Date.now() + 600000),
             httpOnly: true,
-        }).status(200).render("game");
+        }).status(200).render("game.hbs");
 
 
 

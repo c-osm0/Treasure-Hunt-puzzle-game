@@ -42,7 +42,7 @@ app.set("view engine","hbs");
 app.set("views",template_path);
 hbs.registerPartials(partials_path)
 app.get('/',(req,res)=> {
-    res.render("index")
+    res.render("index.hbs")
 })
 
 // //middlewares
