@@ -176,16 +176,10 @@ function score(data) {
     document.getElementById("scoreboard").innerHTML = tab;
 
 }
-// Setting innerHTML as tab variable
 
-
-// Calling that async function
 getapi(api_url);
 
-// function myFunction() {
-//     var element = document.getElementById("myDIV");
-//     element.classList.toggle("mystyle");
-// }
+
 dashlink.addEventListener("onclick", () => {
     usersec.style.display = 'none';
     dashsec.style.display = 'block';
@@ -194,16 +188,7 @@ userslink.addEventListener("onclick", () => {
     dashsec.style.display = 'none';
     usersec.style.display = 'block';
 })
-//   function makedash(){
-//       usersec.style.visibility = 'hidden';
-//         dashsec.style.visibility = 'visible';
 
-//       }
-//   function makeuser(){
-//         dashsec.style.visibility = 'hidden';
-//         usersec.style.visibility = 'visible';
-
-//       }
 
 function makegraph(data) {
     

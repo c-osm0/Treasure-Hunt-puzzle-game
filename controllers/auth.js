@@ -2,7 +2,13 @@ import User from "../models/User.js";
 import bcrypt from "bcryptjs"
 import { createError } from "../utils/error.js";
 import jwt from "jsonwebtoken";
+import { fileURLToPath } from 'url';
+import path from "path"
 
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export const register = async (req, res, next) => {
     try {
@@ -25,7 +31,7 @@ export const register = async (req, res, next) => {
             res.cookie("access_token", token, {
                 expires: new Date(Date.now() + 600000),
                 httpOnly: true,
-            }).status(200).render("index.hbs");
+            }).status(200).sendFile(__dirname + "/index.html");
             // res.status(200).render("index")
         }
     } catch (err) {
@@ -49,7 +55,7 @@ export const login = async (req, res, next) => {
         res.cookie("access_token", token, {
             expires: new Date(Date.now() + 600000),
             httpOnly: true,
-        }).status(200).render("game.hbs");
+        }).status(200).sendFile(__dirname + "/game.html");
 
 
 

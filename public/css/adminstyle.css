@@ -8,7 +8,7 @@
 }
 
 :root{
-    /* ===== Colors ===== */
+    
     --primary-color: #0E4BF1;
     --panel-color: #FFF;
     --text-color: #000;
@@ -20,7 +20,7 @@
     --box3-color: #E7D1FC;
     --title-icon-color: #fff;
     
-    /* ====== Transition ====== */
+   
     --tran-05: all 0.5s ease;
     --tran-03: all 0.3s ease;
     --tran-03: all 0.2s ease;
@@ -42,7 +42,7 @@ body.dark{
     --box3-color: #3A3B3C;
     --title-icon-color: #CCC;
 }
-/* === Custom Scroll Bar CSS === */
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -361,7 +361,7 @@ nav.close ~ .dashboard .top{
     color: var(--text-color);
 }
 .btn{
-    /* background-color: #4CAF50; Green */
+    
   border: solid 2px blue;
   color: rgb(0, 0, 0);
   /* padding: 15px 32px; */
