@@ -1,6 +1,6 @@
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d')
-var myaudio = new Audio('/music/bgmusic.mp3');
+var myaudio = new Audio('bgmusic.mp3');
 const icons = document.getElementsByClassName("icons")
 const volbtn = document.getElementById("volbtn")
 
@@ -26,7 +26,7 @@ function rs() {
     // canvas.height = 576
 
     const image = new Image()
-    image.src = '/img/map1.png';
+    image.src = 'map1.png';
     // let displaytext = document.getElementsById("dis")
 
     let time = 0
@@ -240,16 +240,16 @@ function rs() {
 
 
     const playerDownImage = new Image()
-    playerDownImage.src = '/img/playerDown.png'
+    playerDownImage.src = 'playerDown.png'
 
     const playerUpImage = new Image()
-    playerUpImage.src = '/img/playerUp.png'
+    playerUpImage.src = 'playerUp.png'
 
     const playerLeftImage = new Image()
-    playerLeftImage.src = '/img/playerLeft.png'
+    playerLeftImage.src = 'playerLeft.png'
 
     const playerRightImage = new Image()
-    playerRightImage.src = '/img/playerRight.png'
+    playerRightImage.src = 'playerRight.png'
     const player = new Sprite({
         position: {
             x: 175,
