@@ -75,7 +75,14 @@ To run this project, you will need to add the following environment variables to
 - Fully authenticated and secure environment
 - Cookies are used to save the game date
 
+## Demo photos
 
+![image](https://user-images.githubusercontent.com/100260435/232976001-8faab73c-4d1b-4901-b07b-6438dc1656bb.png)
+![image](https://user-images.githubusercontent.com/100260435/232976078-8c089a8f-d883-4004-a9e5-ac05750f0898.png)
+![image](https://user-images.githubusercontent.com/100260435/232975773-2a696740-3215-4357-80b7-715d0e86c3da.png)
+![image](https://user-images.githubusercontent.com/100260435/232975841-f02b09a2-352c-457d-9022-5eef32bc4d53.png)
+![image](https://user-images.githubusercontent.com/100260435/232975884-18067dc1-5391-43b0-9430-988ba52837e0.png)
+![image](https://user-images.githubusercontent.com/100260435/232975940-98daccfb-1ba5-46b9-8548-e8aa939dae3b.png)
 
 ## Appendix
 
